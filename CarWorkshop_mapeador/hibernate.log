@@ -1,0 +1,775 @@
+10:01:32,323  WARN RootClass:253 - composite-id class does not override equals(): uo.ri.model.types.CargoKey
+10:01:32,325  WARN RootClass:258 - composite-id class does not override hashCode(): uo.ri.model.types.CargoKey
+10:01:33,496  WARN SettingsFactory:147 - Could not obtain connection to query metadata
+java.sql.SQLTransientConnectionException: java.net.ConnectException: Connection refused: connect
+	at org.hsqldb.jdbc.Util.sqlException(Unknown Source)
+	at org.hsqldb.jdbc.Util.sqlException(Unknown Source)
+	at org.hsqldb.jdbc.JDBCConnection.<init>(Unknown Source)
+	at org.hsqldb.jdbc.JDBCDriver.getConnection(Unknown Source)
+	at org.hsqldb.jdbc.JDBCDriver.connect(Unknown Source)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at org.hibernate.connection.DriverManagerConnectionProvider.getConnection(DriverManagerConnectionProvider.java:133)
+	at org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:114)
+	at org.hibernate.cfg.Configuration.buildSettingsInternal(Configuration.java:2833)
+	at org.hibernate.cfg.Configuration.buildSettings(Configuration.java:2829)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:1840)
+	at org.hibernate.ejb.Ejb3Configuration.buildEntityManagerFactory(Ejb3Configuration.java:902)
+	at org.hibernate.ejb.HibernatePersistence.createEntityManagerFactory(HibernatePersistence.java:57)
+	at javax.persistence.Persistence.createEntityManagerFactory(Persistence.java:48)
+	at javax.persistence.Persistence.createEntityManagerFactory(Persistence.java:32)
+	at uo.ri.business.impl.admin.AddMechanic.execute(AddMechanic.java:17)
+	at uo.ri.business.impl.AdminServiceImpl.newMechanic(AdminServiceImpl.java:18)
+	at uo.ri.ui.admin.action.AddMechanicAction.execute(AddMechanicAction.java:21)
+	at alb.util.menu.BaseMenu.processOption(BaseMenu.java:51)
+	at alb.util.menu.BaseMenu.execute(BaseMenu.java:33)
+	at alb.util.menu.BaseMenu.processOption(BaseMenu.java:51)
+	at alb.util.menu.BaseMenu.execute(BaseMenu.java:33)
+	at uo.ri.ui.admin.MainMenu.main(MainMenu.java:17)
+Caused by: org.hsqldb.HsqlException: java.net.ConnectException: Connection refused: connect
+	at org.hsqldb.ClientConnection.openConnection(Unknown Source)
+	at org.hsqldb.ClientConnection.initConnection(Unknown Source)
+	at org.hsqldb.ClientConnection.<init>(Unknown Source)
+	... 22 more
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at java.net.Socket.<init>(Unknown Source)
+	at java.net.Socket.<init>(Unknown Source)
+	at org.hsqldb.server.HsqlSocketFactory.createSocket(Unknown Source)
+	... 25 more
+10:01:34,981  WARN JDBCExceptionReporter:233 - SQL Error: -1301, SQLState: 08001
+10:01:34,981 ERROR JDBCExceptionReporter:234 - java.net.ConnectException: Connection refused: connect
+10:03:59,155  WARN RootClass:253 - composite-id class does not override equals(): uo.ri.model.types.CargoKey
+10:03:59,157  WARN RootClass:258 - composite-id class does not override hashCode(): uo.ri.model.types.CargoKey
+10:04:35,078  WARN RootClass:253 - composite-id class does not override equals(): uo.ri.model.types.CargoKey
+10:04:35,080  WARN RootClass:258 - composite-id class does not override hashCode(): uo.ri.model.types.CargoKey
+10:46:00,583  WARN RootClass:253 - composite-id class does not override equals(): uo.ri.model.types.CargoKey
+10:46:00,585  WARN RootClass:258 - composite-id class does not override hashCode(): uo.ri.model.types.CargoKey
+10:46:01,728  WARN SettingsFactory:147 - Could not obtain connection to query metadata
+java.sql.SQLTransientConnectionException: java.net.ConnectException: Connection refused: connect
+	at org.hsqldb.jdbc.Util.sqlException(Unknown Source)
+	at org.hsqldb.jdbc.Util.sqlException(Unknown Source)
+	at org.hsqldb.jdbc.JDBCConnection.<init>(Unknown Source)
+	at org.hsqldb.jdbc.JDBCDriver.getConnection(Unknown Source)
+	at org.hsqldb.jdbc.JDBCDriver.connect(Unknown Source)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at org.hibernate.connection.DriverManagerConnectionProvider.getConnection(DriverManagerConnectionProvider.java:133)
+	at org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:114)
+	at org.hibernate.cfg.Configuration.buildSettingsInternal(Configuration.java:2833)
+	at org.hibernate.cfg.Configuration.buildSettings(Configuration.java:2829)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:1840)
+	at org.hibernate.ejb.Ejb3Configuration.buildEntityManagerFactory(Ejb3Configuration.java:902)
+	at org.hibernate.ejb.HibernatePersistence.createEntityManagerFactory(HibernatePersistence.java:57)
+	at javax.persistence.Persistence.createEntityManagerFactory(Persistence.java:48)
+	at javax.persistence.Persistence.createEntityManagerFactory(Persistence.java:32)
+	at uo.ri.persistence.util.Jpa.getEmf(Jpa.java:36)
+	at uo.ri.persistence.util.Jpa.createEntityManager(Jpa.java:24)
+	at uo.ri.business.impl.CommandExecutor.execute(CommandExecutor.java:15)
+	at uo.ri.business.impl.AdminServiceImpl.findAllMechanics(AdminServiceImpl.java:36)
+	at uo.ri.ui.admin.action.ListMechanicsAction.execute(ListMechanicsAction.java:19)
+	at alb.util.menu.BaseMenu.processOption(BaseMenu.java:51)
+	at alb.util.menu.BaseMenu.execute(BaseMenu.java:33)
+	at alb.util.menu.BaseMenu.processOption(BaseMenu.java:51)
+	at alb.util.menu.BaseMenu.execute(BaseMenu.java:33)
+	at uo.ri.ui.admin.MainMenu.main(MainMenu.java:17)
+Caused by: org.hsqldb.HsqlException: java.net.ConnectException: Connection refused: connect
+	at org.hsqldb.ClientConnection.openConnection(Unknown Source)
+	at org.hsqldb.ClientConnection.initConnection(Unknown Source)
+	at org.hsqldb.ClientConnection.<init>(Unknown Source)
+	... 24 more
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at java.net.Socket.<init>(Unknown Source)
+	at java.net.Socket.<init>(Unknown Source)
+	at org.hsqldb.server.HsqlSocketFactory.createSocket(Unknown Source)
+	... 27 more
+10:46:03,220  WARN JDBCExceptionReporter:233 - SQL Error: -1301, SQLState: 08001
+10:46:03,220 ERROR JDBCExceptionReporter:234 - java.net.ConnectException: Connection refused: connect
+10:46:39,713  WARN RootClass:253 - composite-id class does not override equals(): uo.ri.model.types.CargoKey
+10:46:39,714  WARN RootClass:258 - composite-id class does not override hashCode(): uo.ri.model.types.CargoKey
+10:47:39,929  WARN JDBCExceptionReporter:233 - SQL Error: -5501, SQLState: 42501
+10:47:39,929 ERROR JDBCExceptionReporter:234 - user lacks privilege or object not found: FACTURA1_.IVAPORCE4_8_0_
+10:49:47,068  WARN RootClass:253 - composite-id class does not override equals(): uo.ri.model.types.CargoKey
+10:49:47,070  WARN RootClass:258 - composite-id class does not override hashCode(): uo.ri.model.types.CargoKey
+10:50:48,560  WARN RootClass:253 - composite-id class does not override equals(): uo.ri.model.types.CargoKey
+10:50:48,562  WARN RootClass:258 - composite-id class does not override hashCode(): uo.ri.model.types.CargoKey
+14:09:55,131  WARN RootClass:253 - composite-id class does not override equals(): uo.ri.model.types.CargoKey
+14:09:55,135  WARN RootClass:258 - composite-id class does not override hashCode(): uo.ri.model.types.CargoKey
+14:09:56,428  WARN SettingsFactory:147 - Could not obtain connection to query metadata
+java.sql.SQLTransientConnectionException: java.net.ConnectException: Connection refused: connect
+	at org.hsqldb.jdbc.Util.sqlException(Unknown Source)
+	at org.hsqldb.jdbc.Util.sqlException(Unknown Source)
+	at org.hsqldb.jdbc.JDBCConnection.<init>(Unknown Source)
+	at org.hsqldb.jdbc.JDBCDriver.getConnection(Unknown Source)
+	at org.hsqldb.jdbc.JDBCDriver.connect(Unknown Source)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at org.hibernate.connection.DriverManagerConnectionProvider.getConnection(DriverManagerConnectionProvider.java:133)
+	at org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:114)
+	at org.hibernate.cfg.Configuration.buildSettingsInternal(Configuration.java:2833)
+	at org.hibernate.cfg.Configuration.buildSettings(Configuration.java:2829)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:1840)
+	at org.hibernate.ejb.Ejb3Configuration.buildEntityManagerFactory(Ejb3Configuration.java:902)
+	at org.hibernate.ejb.HibernatePersistence.createEntityManagerFactory(HibernatePersistence.java:57)
+	at javax.persistence.Persistence.createEntityManagerFactory(Persistence.java:48)
+	at javax.persistence.Persistence.createEntityManagerFactory(Persistence.java:32)
+	at uo.ri.persistence.util.Jpa.getEmf(Jpa.java:36)
+	at uo.ri.persistence.util.Jpa.createEntityManager(Jpa.java:24)
+	at uo.ri.business.impl.CommandExecutor.execute(CommandExecutor.java:15)
+	at uo.ri.business.impl.AdminServiceImpl.findAllMechanics(AdminServiceImpl.java:36)
+	at uo.ri.ui.admin.action.ListMechanicsAction.execute(ListMechanicsAction.java:19)
+	at alb.util.menu.BaseMenu.processOption(BaseMenu.java:51)
+	at alb.util.menu.BaseMenu.execute(BaseMenu.java:33)
+	at alb.util.menu.BaseMenu.processOption(BaseMenu.java:51)
+	at alb.util.menu.BaseMenu.execute(BaseMenu.java:33)
+	at uo.ri.ui.admin.MainMenu.main(MainMenu.java:17)
+Caused by: org.hsqldb.HsqlException: java.net.ConnectException: Connection refused: connect
+	at org.hsqldb.ClientConnection.openConnection(Unknown Source)
+	at org.hsqldb.ClientConnection.initConnection(Unknown Source)
+	at org.hsqldb.ClientConnection.<init>(Unknown Source)
+	... 24 more
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at java.net.Socket.<init>(Unknown Source)
+	at java.net.Socket.<init>(Unknown Source)
+	at org.hsqldb.server.HsqlSocketFactory.createSocket(Unknown Source)
+	... 27 more
+14:09:58,211  WARN JDBCExceptionReporter:233 - SQL Error: -1301, SQLState: 08001
+14:09:58,211 ERROR JDBCExceptionReporter:234 - java.net.ConnectException: Connection refused: connect
+14:23:38,943  WARN RootClass:253 - composite-id class does not override equals(): uo.ri.model.types.CargoKey
+14:23:38,945  WARN RootClass:258 - composite-id class does not override hashCode(): uo.ri.model.types.CargoKey
+14:30:25,226  WARN RootClass:253 - composite-id class does not override equals(): uo.ri.model.types.CargoKey
+14:30:25,229  WARN RootClass:258 - composite-id class does not override hashCode(): uo.ri.model.types.CargoKey
+14:34:38,534  WARN RootClass:253 - composite-id class does not override equals(): uo.ri.model.types.CargoKey
+14:34:38,538  WARN RootClass:258 - composite-id class does not override hashCode(): uo.ri.model.types.CargoKey
+14:39:59,616  WARN RootClass:253 - composite-id class does not override equals(): uo.ri.model.types.CargoKey
+14:39:59,619  WARN RootClass:258 - composite-id class does not override hashCode(): uo.ri.model.types.CargoKey
+14:48:21,887  WARN RootClass:253 - composite-id class does not override equals(): uo.ri.model.types.CargoKey
+14:48:21,890  WARN RootClass:258 - composite-id class does not override hashCode(): uo.ri.model.types.CargoKey
+15:06:38,942  WARN RootClass:253 - composite-id class does not override equals(): uo.ri.model.types.CargoKey
+15:06:38,946  WARN RootClass:258 - composite-id class does not override hashCode(): uo.ri.model.types.CargoKey
+15:24:03,973  WARN RootClass:253 - composite-id class does not override equals(): uo.ri.model.types.CargoKey
+15:24:03,976  WARN RootClass:258 - composite-id class does not override hashCode(): uo.ri.model.types.CargoKey
+15:26:07,372  WARN RootClass:253 - composite-id class does not override equals(): uo.ri.model.types.CargoKey
+15:26:07,376  WARN RootClass:258 - composite-id class does not override hashCode(): uo.ri.model.types.CargoKey
+15:32:22,873  WARN RootClass:253 - composite-id class does not override equals(): uo.ri.model.types.CargoKey
+15:32:22,876  WARN RootClass:258 - composite-id class does not override hashCode(): uo.ri.model.types.CargoKey
+19:16:50,038  WARN RootClass:253 - composite-id class does not override equals(): uo.ri.model.types.CargoKey
+19:16:50,059  WARN RootClass:258 - composite-id class does not override hashCode(): uo.ri.model.types.CargoKey
+19:16:52,135  WARN JDBCExceptionReporter:233 - SQL Error: -5501, SQLState: 42501
+19:16:52,136 ERROR JDBCExceptionReporter:234 - usuario no tiene privilegios suficientes o objeto no encontrado: MECANICO0_.DNI6_
+19:18:34,333  WARN RootClass:253 - composite-id class does not override equals(): uo.ri.model.types.CargoKey
+19:18:34,336  WARN RootClass:258 - composite-id class does not override hashCode(): uo.ri.model.types.CargoKey
+19:18:35,977  WARN SettingsFactory:147 - Could not obtain connection to query metadata
+java.sql.SQLTransientConnectionException: java.net.ConnectException: Connection refused: connect
+	at org.hsqldb.jdbc.Util.sqlException(Unknown Source)
+	at org.hsqldb.jdbc.Util.sqlException(Unknown Source)
+	at org.hsqldb.jdbc.JDBCConnection.<init>(Unknown Source)
+	at org.hsqldb.jdbc.JDBCDriver.getConnection(Unknown Source)
+	at org.hsqldb.jdbc.JDBCDriver.connect(Unknown Source)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at org.hibernate.connection.DriverManagerConnectionProvider.getConnection(DriverManagerConnectionProvider.java:133)
+	at org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:114)
+	at org.hibernate.cfg.Configuration.buildSettingsInternal(Configuration.java:2833)
+	at org.hibernate.cfg.Configuration.buildSettings(Configuration.java:2829)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:1840)
+	at org.hibernate.ejb.Ejb3Configuration.buildEntityManagerFactory(Ejb3Configuration.java:902)
+	at org.hibernate.ejb.HibernatePersistence.createEntityManagerFactory(HibernatePersistence.java:57)
+	at javax.persistence.Persistence.createEntityManagerFactory(Persistence.java:48)
+	at javax.persistence.Persistence.createEntityManagerFactory(Persistence.java:32)
+	at uo.ri.persistence.util.Jpa.getEmf(Jpa.java:36)
+	at uo.ri.persistence.util.Jpa.createEntityManager(Jpa.java:24)
+	at uo.ri.business.impl.CommandExecutor.execute(CommandExecutor.java:15)
+	at uo.ri.business.impl.AdminServiceImpl.findAllMechanics(AdminServiceImpl.java:36)
+	at uo.ri.ui.admin.action.ListMechanicsAction.execute(ListMechanicsAction.java:19)
+	at alb.util.menu.BaseMenu.processOption(BaseMenu.java:51)
+	at alb.util.menu.BaseMenu.execute(BaseMenu.java:33)
+	at alb.util.menu.BaseMenu.processOption(BaseMenu.java:51)
+	at alb.util.menu.BaseMenu.execute(BaseMenu.java:33)
+	at uo.ri.ui.admin.MainMenu.main(MainMenu.java:17)
+Caused by: org.hsqldb.HsqlException: java.net.ConnectException: Connection refused: connect
+	at org.hsqldb.ClientConnection.openConnection(Unknown Source)
+	at org.hsqldb.ClientConnection.initConnection(Unknown Source)
+	at org.hsqldb.ClientConnection.<init>(Unknown Source)
+	... 24 more
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at java.net.Socket.<init>(Unknown Source)
+	at java.net.Socket.<init>(Unknown Source)
+	at org.hsqldb.server.HsqlSocketFactory.createSocket(Unknown Source)
+	... 27 more
+19:18:37,876  WARN JDBCExceptionReporter:233 - SQL Error: -1301, SQLState: 08001
+19:18:37,876 ERROR JDBCExceptionReporter:234 - java.net.ConnectException: Connection refused: connect
+19:27:14,383  WARN RootClass:253 - composite-id class does not override equals(): uo.ri.model.types.CargoKey
+19:27:14,391  WARN RootClass:258 - composite-id class does not override hashCode(): uo.ri.model.types.CargoKey
+19:27:15,603  WARN JDBCExceptionReporter:233 - SQL Error: -5501, SQLState: 42501
+19:27:15,604 ERROR JDBCExceptionReporter:234 - usuario no tiene privilegios suficientes o objeto no encontrado: MECANICO0_.DNI6_
+19:28:07,174  WARN RootClass:253 - composite-id class does not override equals(): uo.ri.model.types.CargoKey
+19:28:07,176  WARN RootClass:258 - composite-id class does not override hashCode(): uo.ri.model.types.CargoKey
+19:28:08,479  WARN JDBCExceptionReporter:233 - SQL Error: -5501, SQLState: 42501
+19:28:08,480 ERROR JDBCExceptionReporter:234 - usuario no tiene privilegios suficientes o objeto no encontrado: DNI
+19:29:01,785  WARN RootClass:253 - composite-id class does not override equals(): uo.ri.model.types.CargoKey
+19:29:01,788  WARN RootClass:258 - composite-id class does not override hashCode(): uo.ri.model.types.CargoKey
+19:32:15,370  WARN RootClass:253 - composite-id class does not override equals(): uo.ri.model.types.CargoKey
+19:32:15,373  WARN RootClass:258 - composite-id class does not override hashCode(): uo.ri.model.types.CargoKey
+13:54:53,314  WARN RootClass:253 - composite-id class does not override equals(): uo.ri.model.types.CargoKey
+13:54:53,317  WARN RootClass:258 - composite-id class does not override hashCode(): uo.ri.model.types.CargoKey
+13:54:54,663  WARN SettingsFactory:147 - Could not obtain connection to query metadata
+java.sql.SQLTransientConnectionException: java.net.ConnectException: Connection refused: connect
+	at org.hsqldb.jdbc.Util.sqlException(Unknown Source)
+	at org.hsqldb.jdbc.Util.sqlException(Unknown Source)
+	at org.hsqldb.jdbc.JDBCConnection.<init>(Unknown Source)
+	at org.hsqldb.jdbc.JDBCDriver.getConnection(Unknown Source)
+	at org.hsqldb.jdbc.JDBCDriver.connect(Unknown Source)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at org.hibernate.connection.DriverManagerConnectionProvider.getConnection(DriverManagerConnectionProvider.java:133)
+	at org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:114)
+	at org.hibernate.cfg.Configuration.buildSettingsInternal(Configuration.java:2833)
+	at org.hibernate.cfg.Configuration.buildSettings(Configuration.java:2829)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:1840)
+	at org.hibernate.ejb.Ejb3Configuration.buildEntityManagerFactory(Ejb3Configuration.java:902)
+	at org.hibernate.ejb.HibernatePersistence.createEntityManagerFactory(HibernatePersistence.java:57)
+	at javax.persistence.Persistence.createEntityManagerFactory(Persistence.java:48)
+	at javax.persistence.Persistence.createEntityManagerFactory(Persistence.java:32)
+	at uo.ri.persistence.util.Jpa.getEmf(Jpa.java:36)
+	at uo.ri.persistence.util.Jpa.createEntityManager(Jpa.java:24)
+	at uo.ri.business.impl.CommandExecutor.execute(CommandExecutor.java:15)
+	at uo.ri.business.impl.AdminServiceImpl.findAllMechanics(AdminServiceImpl.java:36)
+	at uo.ri.ui.admin.action.ListMechanicsAction.execute(ListMechanicsAction.java:19)
+	at alb.util.menu.BaseMenu.processOption(BaseMenu.java:51)
+	at alb.util.menu.BaseMenu.execute(BaseMenu.java:33)
+	at alb.util.menu.BaseMenu.processOption(BaseMenu.java:51)
+	at alb.util.menu.BaseMenu.execute(BaseMenu.java:33)
+	at uo.ri.ui.admin.MainMenu.main(MainMenu.java:17)
+Caused by: org.hsqldb.HsqlException: java.net.ConnectException: Connection refused: connect
+	at org.hsqldb.ClientConnection.openConnection(Unknown Source)
+	at org.hsqldb.ClientConnection.initConnection(Unknown Source)
+	at org.hsqldb.ClientConnection.<init>(Unknown Source)
+	... 24 more
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at java.net.Socket.<init>(Unknown Source)
+	at java.net.Socket.<init>(Unknown Source)
+	at org.hsqldb.server.HsqlSocketFactory.createSocket(Unknown Source)
+	... 27 more
+13:54:56,221 ERROR SchemaExport:287 - schema export unsuccessful
+java.sql.SQLTransientConnectionException: java.net.ConnectException: Connection refused: connect
+	at org.hsqldb.jdbc.Util.sqlException(Unknown Source)
+	at org.hsqldb.jdbc.Util.sqlException(Unknown Source)
+	at org.hsqldb.jdbc.JDBCConnection.<init>(Unknown Source)
+	at org.hsqldb.jdbc.JDBCDriver.getConnection(Unknown Source)
+	at org.hsqldb.jdbc.JDBCDriver.connect(Unknown Source)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at org.hibernate.connection.DriverManagerConnectionProvider.getConnection(DriverManagerConnectionProvider.java:133)
+	at org.hibernate.tool.hbm2ddl.SuppliedConnectionProviderConnectionHelper.prepare(SuppliedConnectionProviderConnectionHelper.java:51)
+	at org.hibernate.tool.hbm2ddl.SchemaExport.execute(SchemaExport.java:263)
+	at org.hibernate.tool.hbm2ddl.SchemaExport.create(SchemaExport.java:219)
+	at org.hibernate.impl.SessionFactoryImpl.<init>(SessionFactoryImpl.java:370)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:1842)
+	at org.hibernate.ejb.Ejb3Configuration.buildEntityManagerFactory(Ejb3Configuration.java:902)
+	at org.hibernate.ejb.HibernatePersistence.createEntityManagerFactory(HibernatePersistence.java:57)
+	at javax.persistence.Persistence.createEntityManagerFactory(Persistence.java:48)
+	at javax.persistence.Persistence.createEntityManagerFactory(Persistence.java:32)
+	at uo.ri.persistence.util.Jpa.getEmf(Jpa.java:36)
+	at uo.ri.persistence.util.Jpa.createEntityManager(Jpa.java:24)
+	at uo.ri.business.impl.CommandExecutor.execute(CommandExecutor.java:15)
+	at uo.ri.business.impl.AdminServiceImpl.findAllMechanics(AdminServiceImpl.java:36)
+	at uo.ri.ui.admin.action.ListMechanicsAction.execute(ListMechanicsAction.java:19)
+	at alb.util.menu.BaseMenu.processOption(BaseMenu.java:51)
+	at alb.util.menu.BaseMenu.execute(BaseMenu.java:33)
+	at alb.util.menu.BaseMenu.processOption(BaseMenu.java:51)
+	at alb.util.menu.BaseMenu.execute(BaseMenu.java:33)
+	at uo.ri.ui.admin.MainMenu.main(MainMenu.java:17)
+Caused by: org.hsqldb.HsqlException: java.net.ConnectException: Connection refused: connect
+	at org.hsqldb.ClientConnection.openConnection(Unknown Source)
+	at org.hsqldb.ClientConnection.initConnection(Unknown Source)
+	at org.hsqldb.ClientConnection.<init>(Unknown Source)
+	... 25 more
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at java.net.Socket.<init>(Unknown Source)
+	at java.net.Socket.<init>(Unknown Source)
+	at org.hsqldb.server.HsqlSocketFactory.createSocket(Unknown Source)
+	... 28 more
+13:54:57,567  WARN JDBCExceptionReporter:233 - SQL Error: -1301, SQLState: 08001
+13:54:57,569 ERROR JDBCExceptionReporter:234 - java.net.ConnectException: Connection refused: connect
+13:59:34,667  WARN RootClass:253 - composite-id class does not override equals(): uo.ri.model.types.CargoKey
+13:59:34,670  WARN RootClass:258 - composite-id class does not override hashCode(): uo.ri.model.types.CargoKey
+13:59:35,612 ERROR SchemaExport:386 - Unsuccessful: create table TAVERIAS (id bigint generated by default as identity (start with 1), descripcion varchar(255), fecha date, importe double, status varchar(255), factura_id bigint, mecanico_id bigint, vehiculo_id bigint, primary key (id))
+13:59:35,613 ERROR SchemaExport:387 - nombre del objeto ya existe: TAVERIAS in statement [create table TAVERIAS (id bigint generated by default as identity (start with 1), descripcion varchar(255), fecha date, importe double, status varchar(255), factura_id bigint, mecanico_id bigint, vehiculo_id bigint, primary key (id))]
+13:59:35,614 ERROR SchemaExport:386 - Unsuccessful: create table TCLIENTES (id bigint generated by default as identity (start with 1), apellidos varchar(255), city varchar(255), street varchar(255), zipcode varchar(255), dni varchar(255), nombre varchar(255), primary key (id))
+13:59:35,615 ERROR SchemaExport:387 - nombre del objeto ya existe: TCLIENTES in statement [create table TCLIENTES (id bigint generated by default as identity (start with 1), apellidos varchar(255), city varchar(255), street varchar(255), zipcode varchar(255), dni varchar(255), nombre varchar(255), primary key (id))]
+13:59:35,616 ERROR SchemaExport:386 - Unsuccessful: create table TFACTURAS (id bigint generated by default as identity (start with 1), fecha date, importe double, iva double, numero bigint not null, status varchar(255), primary key (id))
+13:59:35,616 ERROR SchemaExport:387 - nombre del objeto ya existe: TFACTURAS in statement [create table TFACTURAS (id bigint generated by default as identity (start with 1), fecha date, importe double, iva double, numero bigint not null, status varchar(255), primary key (id))]
+13:59:35,617 ERROR SchemaExport:386 - Unsuccessful: create table TINTERVENCIONES (minutos integer, averia_id bigint, mecanico_id bigint, primary key (averia_id, mecanico_id))
+13:59:35,618 ERROR SchemaExport:387 - nombre del objeto ya existe: TINTERVENCIONES in statement [create table TINTERVENCIONES (minutos integer, averia_id bigint, mecanico_id bigint, primary key (averia_id, mecanico_id))]
+13:59:35,620 ERROR SchemaExport:386 - Unsuccessful: create table TMECANICOS (id bigint generated by default as identity (start with 1), apellidos varchar(255), dni varchar(255), nombre varchar(255), primary key (id))
+13:59:35,621 ERROR SchemaExport:387 - nombre del objeto ya existe: TMECANICOS in statement [create table TMECANICOS (id bigint generated by default as identity (start with 1), apellidos varchar(255), dni varchar(255), nombre varchar(255), primary key (id))]
+13:59:35,623 ERROR SchemaExport:386 - Unsuccessful: create table TREPUESTOS (id bigint generated by default as identity (start with 1), codigo varchar(255), descripcion varchar(255), precio double, primary key (id))
+13:59:35,624 ERROR SchemaExport:387 - nombre del objeto ya existe: TREPUESTOS in statement [create table TREPUESTOS (id bigint generated by default as identity (start with 1), codigo varchar(255), descripcion varchar(255), precio double, primary key (id))]
+13:59:35,626 ERROR SchemaExport:386 - Unsuccessful: create table TTIPOSVEHICULO (id bigint generated by default as identity (start with 1), nombre varchar(255), precioHora double, primary key (id))
+13:59:35,627 ERROR SchemaExport:387 - nombre del objeto ya existe: TTIPOSVEHICULO in statement [create table TTIPOSVEHICULO (id bigint generated by default as identity (start with 1), nombre varchar(255), precioHora double, primary key (id))]
+13:59:35,629 ERROR SchemaExport:386 - Unsuccessful: create table TVEHICULOS (id bigint generated by default as identity (start with 1), marca varchar(255), matricula varchar(255), modelo varchar(255), NUM_AVERIAS integer, cliente_id bigint, tipo_id bigint, primary key (id))
+13:59:35,629 ERROR SchemaExport:387 - nombre del objeto ya existe: TVEHICULOS in statement [create table TVEHICULOS (id bigint generated by default as identity (start with 1), marca varchar(255), matricula varchar(255), modelo varchar(255), NUM_AVERIAS integer, cliente_id bigint, tipo_id bigint, primary key (id))]
+13:59:35,630 ERROR SchemaExport:386 - Unsuccessful: alter table TAVERIAS add constraint FK1B0B4085D9BF4232 foreign key (factura_id) references TFACTURAS
+13:59:35,630 ERROR SchemaExport:387 - ya existe una clave foránea ('FOREIGN KEY') para este conjunto de columnas: FK1B0B4085D9BF4232 in statement [alter table TAVERIAS add constraint FK1B0B4085D9BF4232 foreign key (factura_id) references TFACTURAS]
+13:59:35,631 ERROR SchemaExport:386 - Unsuccessful: alter table TAVERIAS add constraint FK1B0B408593648722 foreign key (vehiculo_id) references TVEHICULOS
+13:59:35,632 ERROR SchemaExport:387 - ya existe una clave foránea ('FOREIGN KEY') para este conjunto de columnas: FK1B0B408593648722 in statement [alter table TAVERIAS add constraint FK1B0B408593648722 foreign key (vehiculo_id) references TVEHICULOS]
+13:59:35,633 ERROR SchemaExport:386 - Unsuccessful: alter table TAVERIAS add constraint FK1B0B4085B4078422 foreign key (mecanico_id) references TMECANICOS
+13:59:35,633 ERROR SchemaExport:387 - ya existe una clave foránea ('FOREIGN KEY') para este conjunto de columnas: FK1B0B4085B4078422 in statement [alter table TAVERIAS add constraint FK1B0B4085B4078422 foreign key (mecanico_id) references TMECANICOS]
+13:59:35,636 ERROR SchemaExport:386 - Unsuccessful: alter table TINTERVENCIONES add constraint FKDAF0F08A1E415D02 foreign key (averia_id) references TAVERIAS
+13:59:35,636 ERROR SchemaExport:387 - ya existe una clave foránea ('FOREIGN KEY') para este conjunto de columnas: FKDAF0F08A1E415D02 in statement [alter table TINTERVENCIONES add constraint FKDAF0F08A1E415D02 foreign key (averia_id) references TAVERIAS]
+13:59:35,637 ERROR SchemaExport:386 - Unsuccessful: alter table TINTERVENCIONES add constraint FKDAF0F08AB4078422 foreign key (mecanico_id) references TMECANICOS
+13:59:35,637 ERROR SchemaExport:387 - ya existe una clave foránea ('FOREIGN KEY') para este conjunto de columnas: FKDAF0F08AB4078422 in statement [alter table TINTERVENCIONES add constraint FKDAF0F08AB4078422 foreign key (mecanico_id) references TMECANICOS]
+13:59:35,644 ERROR SchemaExport:386 - Unsuccessful: alter table TVEHICULOS add constraint FK57F1E1BA67736647 foreign key (tipo_id) references TTIPOSVEHICULO
+13:59:35,644 ERROR SchemaExport:387 - ya existe una clave foránea ('FOREIGN KEY') para este conjunto de columnas: FK57F1E1BA67736647 in statement [alter table TVEHICULOS add constraint FK57F1E1BA67736647 foreign key (tipo_id) references TTIPOSVEHICULO]
+13:59:35,646 ERROR SchemaExport:386 - Unsuccessful: alter table TVEHICULOS add constraint FK57F1E1BA1A299AF2 foreign key (cliente_id) references TCLIENTES
+13:59:35,646 ERROR SchemaExport:387 - ya existe una clave foránea ('FOREIGN KEY') para este conjunto de columnas: FK57F1E1BA1A299AF2 in statement [alter table TVEHICULOS add constraint FK57F1E1BA1A299AF2 foreign key (cliente_id) references TCLIENTES]
+01:32:43,980  WARN RootClass:253 - composite-id class does not override equals(): uo.ri.model.types.CargoKey
+01:32:44,014  WARN RootClass:258 - composite-id class does not override hashCode(): uo.ri.model.types.CargoKey
+01:32:45,585 ERROR SchemaExport:386 - Unsuccessful: create table TAVERIAS (id bigint generated by default as identity (start with 1), descripcion varchar(255), fecha date, importe double, status varchar(255), factura_id bigint, mecanico_id bigint, vehiculo_id bigint, primary key (id))
+01:32:45,585 ERROR SchemaExport:387 - nombre del objeto ya existe: TAVERIAS in statement [create table TAVERIAS (id bigint generated by default as identity (start with 1), descripcion varchar(255), fecha date, importe double, status varchar(255), factura_id bigint, mecanico_id bigint, vehiculo_id bigint, primary key (id))]
+01:32:45,588 ERROR SchemaExport:386 - Unsuccessful: create table TCLIENTES (id bigint generated by default as identity (start with 1), apellidos varchar(255), city varchar(255), street varchar(255), zipcode varchar(255), dni varchar(255), nombre varchar(255), primary key (id))
+01:32:45,589 ERROR SchemaExport:387 - nombre del objeto ya existe: TCLIENTES in statement [create table TCLIENTES (id bigint generated by default as identity (start with 1), apellidos varchar(255), city varchar(255), street varchar(255), zipcode varchar(255), dni varchar(255), nombre varchar(255), primary key (id))]
+01:32:45,591 ERROR SchemaExport:386 - Unsuccessful: create table TFACTURAS (id bigint generated by default as identity (start with 1), fecha date, importe double, iva double, numero bigint not null, status varchar(255), primary key (id))
+01:32:45,591 ERROR SchemaExport:387 - nombre del objeto ya existe: TFACTURAS in statement [create table TFACTURAS (id bigint generated by default as identity (start with 1), fecha date, importe double, iva double, numero bigint not null, status varchar(255), primary key (id))]
+01:32:45,594 ERROR SchemaExport:386 - Unsuccessful: create table TMECANICOS (id bigint generated by default as identity (start with 1), apellidos varchar(255), dni varchar(255), nombre varchar(255), primary key (id))
+01:32:45,596 ERROR SchemaExport:387 - nombre del objeto ya existe: TMECANICOS in statement [create table TMECANICOS (id bigint generated by default as identity (start with 1), apellidos varchar(255), dni varchar(255), nombre varchar(255), primary key (id))]
+01:32:45,602 ERROR SchemaExport:386 - Unsuccessful: create table TTIPOSVEHICULO (id bigint generated by default as identity (start with 1), nombre varchar(255), precioHora double, primary key (id))
+01:32:45,602 ERROR SchemaExport:387 - nombre del objeto ya existe: TTIPOSVEHICULO in statement [create table TTIPOSVEHICULO (id bigint generated by default as identity (start with 1), nombre varchar(255), precioHora double, primary key (id))]
+01:32:45,604 ERROR SchemaExport:386 - Unsuccessful: create table TVEHICULOS (id bigint generated by default as identity (start with 1), marca varchar(255), matricula varchar(255), modelo varchar(255), NUM_AVERIAS integer, cliente_id bigint, tipo_id bigint, primary key (id))
+01:32:45,605 ERROR SchemaExport:387 - nombre del objeto ya existe: TVEHICULOS in statement [create table TVEHICULOS (id bigint generated by default as identity (start with 1), marca varchar(255), matricula varchar(255), modelo varchar(255), NUM_AVERIAS integer, cliente_id bigint, tipo_id bigint, primary key (id))]
+01:32:45,606 ERROR SchemaExport:386 - Unsuccessful: alter table TAVERIAS add constraint FK1B0B4085D9BF4232 foreign key (factura_id) references TFACTURAS
+01:32:45,607 ERROR SchemaExport:387 - ya existe una clave foránea ('FOREIGN KEY') para este conjunto de columnas: FK1B0B4085D9BF4232 in statement [alter table TAVERIAS add constraint FK1B0B4085D9BF4232 foreign key (factura_id) references TFACTURAS]
+01:32:45,608 ERROR SchemaExport:386 - Unsuccessful: alter table TAVERIAS add constraint FK1B0B408593648722 foreign key (vehiculo_id) references TVEHICULOS
+01:32:45,608 ERROR SchemaExport:387 - ya existe una clave foránea ('FOREIGN KEY') para este conjunto de columnas: FK1B0B408593648722 in statement [alter table TAVERIAS add constraint FK1B0B408593648722 foreign key (vehiculo_id) references TVEHICULOS]
+01:32:45,609 ERROR SchemaExport:386 - Unsuccessful: alter table TAVERIAS add constraint FK1B0B4085B4078422 foreign key (mecanico_id) references TMECANICOS
+01:32:45,609 ERROR SchemaExport:387 - ya existe una clave foránea ('FOREIGN KEY') para este conjunto de columnas: FK1B0B4085B4078422 in statement [alter table TAVERIAS add constraint FK1B0B4085B4078422 foreign key (mecanico_id) references TMECANICOS]
+01:32:45,620 ERROR SchemaExport:386 - Unsuccessful: alter table TVEHICULOS add constraint FK57F1E1BA67736647 foreign key (tipo_id) references TTIPOSVEHICULO
+01:32:45,620 ERROR SchemaExport:387 - ya existe una clave foránea ('FOREIGN KEY') para este conjunto de columnas: FK57F1E1BA67736647 in statement [alter table TVEHICULOS add constraint FK57F1E1BA67736647 foreign key (tipo_id) references TTIPOSVEHICULO]
+01:32:45,621 ERROR SchemaExport:386 - Unsuccessful: alter table TVEHICULOS add constraint FK57F1E1BA1A299AF2 foreign key (cliente_id) references TCLIENTES
+01:32:45,621 ERROR SchemaExport:387 - ya existe una clave foránea ('FOREIGN KEY') para este conjunto de columnas: FK57F1E1BA1A299AF2 in statement [alter table TVEHICULOS add constraint FK57F1E1BA1A299AF2 foreign key (cliente_id) references TCLIENTES]
+01:41:06,522  WARN RootClass:253 - composite-id class does not override equals(): uo.ri.model.types.CargoKey
+01:41:06,525  WARN RootClass:258 - composite-id class does not override hashCode(): uo.ri.model.types.CargoKey
+01:41:07,454 ERROR SchemaExport:386 - Unsuccessful: create table TCLIENTES (id bigint generated by default as identity (start with 1), apellidos varchar(255), city varchar(255), street varchar(255), zipcode varchar(255), dni varchar(255), nombre varchar(255), primary key (id))
+01:41:07,454 ERROR SchemaExport:387 - nombre del objeto ya existe: TCLIENTES in statement [create table TCLIENTES (id bigint generated by default as identity (start with 1), apellidos varchar(255), city varchar(255), street varchar(255), zipcode varchar(255), dni varchar(255), nombre varchar(255), primary key (id))]
+01:41:07,459 ERROR SchemaExport:386 - Unsuccessful: create table TTIPOSVEHICULO (id bigint generated by default as identity (start with 1), nombre varchar(255), precioHora double, primary key (id))
+01:41:07,460 ERROR SchemaExport:387 - nombre del objeto ya existe: TTIPOSVEHICULO in statement [create table TTIPOSVEHICULO (id bigint generated by default as identity (start with 1), nombre varchar(255), precioHora double, primary key (id))]
+01:44:44,755  WARN RootClass:253 - composite-id class does not override equals(): uo.ri.model.types.CargoKey
+01:44:44,758  WARN RootClass:258 - composite-id class does not override hashCode(): uo.ri.model.types.CargoKey
+02:41:25,899  WARN RootClass:253 - composite-id class does not override equals(): uo.ri.model.types.CargoKey
+02:41:25,903  WARN RootClass:258 - composite-id class does not override hashCode(): uo.ri.model.types.CargoKey
+03:33:32,156  WARN RootClass:253 - composite-id class does not override equals(): uo.ri.model.types.CargoKey
+03:33:32,159  WARN RootClass:258 - composite-id class does not override hashCode(): uo.ri.model.types.CargoKey
+03:33:33,322 ERROR PARSER:56 -  Path expected for join!
+03:33:33,325 ERROR PARSER:56 -  Invalid path: 'c.status'
+03:33:33,326 ERROR PARSER:56 - <AST>:0:0: unexpected end of subtree
+03:33:33,326 ERROR PARSER:56 -  left-hand operand of a binary operator was null
+03:33:33,358 ERROR SessionFactoryImpl:422 - Error in named query: Mecanico.find
+org.hibernate.hql.ast.QuerySyntaxException: Path expected for join! [select m from uo.ri.model.Mecanico m inner join Contrato c where c.status = uo.ri.amp.model.types.ContratoStatus.ACTIVO]
+	at org.hibernate.hql.ast.QuerySyntaxException.convert(QuerySyntaxException.java:54)
+	at org.hibernate.hql.ast.QuerySyntaxException.convert(QuerySyntaxException.java:47)
+	at org.hibernate.hql.ast.ErrorCounter.throwQueryException(ErrorCounter.java:82)
+	at org.hibernate.hql.ast.QueryTranslatorImpl.analyze(QueryTranslatorImpl.java:261)
+	at org.hibernate.hql.ast.QueryTranslatorImpl.doCompile(QueryTranslatorImpl.java:185)
+	at org.hibernate.hql.ast.QueryTranslatorImpl.compile(QueryTranslatorImpl.java:136)
+	at org.hibernate.engine.query.HQLQueryPlan.<init>(HQLQueryPlan.java:101)
+	at org.hibernate.engine.query.HQLQueryPlan.<init>(HQLQueryPlan.java:80)
+	at org.hibernate.engine.query.QueryPlanCache.getHQLQueryPlan(QueryPlanCache.java:124)
+	at org.hibernate.impl.SessionFactoryImpl.checkNamedQueries(SessionFactoryImpl.java:547)
+	at org.hibernate.impl.SessionFactoryImpl.<init>(SessionFactoryImpl.java:411)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:1842)
+	at org.hibernate.ejb.Ejb3Configuration.buildEntityManagerFactory(Ejb3Configuration.java:902)
+	at org.hibernate.ejb.HibernatePersistence.createEntityManagerFactory(HibernatePersistence.java:57)
+	at javax.persistence.Persistence.createEntityManagerFactory(Persistence.java:48)
+	at javax.persistence.Persistence.createEntityManagerFactory(Persistence.java:32)
+	at uo.ri.persistence.util.Jpa.getEmf(Jpa.java:36)
+	at uo.ri.persistence.util.Jpa.createEntityManager(Jpa.java:24)
+	at uo.ri.amp.business.impl.CommandExecutor.execute(CommandExecutor.java:15)
+	at uo.ri.amp.business.impl.AdminServiceImpl.findAllMechanics(AdminServiceImpl.java:40)
+	at uo.ri.amp.ui.admin.action.ListAllMechanicsAction.execute(ListAllMechanicsAction.java:20)
+	at alb.util.menu.BaseMenu.processOption(BaseMenu.java:51)
+	at alb.util.menu.BaseMenu.execute(BaseMenu.java:33)
+	at alb.util.menu.BaseMenu.processOption(BaseMenu.java:51)
+	at alb.util.menu.BaseMenu.execute(BaseMenu.java:33)
+	at uo.ri.amp.ui.admin.MainMenu.main(MainMenu.java:23)
+03:38:05,516  WARN RootClass:253 - composite-id class does not override equals(): uo.ri.model.types.CargoKey
+03:38:05,520  WARN RootClass:258 - composite-id class does not override hashCode(): uo.ri.model.types.CargoKey
+03:38:06,663 ERROR PARSER:56 - line 1:60: unexpected token: on
+03:38:06,683 ERROR SessionFactoryImpl:422 - Error in named query: Mecanico.find
+org.hibernate.hql.ast.QuerySyntaxException: unexpected token: on near line 1, column 60 [select m from uo.ri.model.Mecanico m inner join Contrato c on m.MECANICO_ID = c.MECANICO_ID where c.status = uo.ri.amp.model.types.ContratoStatus.ACTIVO]
+	at org.hibernate.hql.ast.QuerySyntaxException.convert(QuerySyntaxException.java:54)
+	at org.hibernate.hql.ast.QuerySyntaxException.convert(QuerySyntaxException.java:47)
+	at org.hibernate.hql.ast.ErrorCounter.throwQueryException(ErrorCounter.java:82)
+	at org.hibernate.hql.ast.QueryTranslatorImpl.parse(QueryTranslatorImpl.java:284)
+	at org.hibernate.hql.ast.QueryTranslatorImpl.doCompile(QueryTranslatorImpl.java:182)
+	at org.hibernate.hql.ast.QueryTranslatorImpl.compile(QueryTranslatorImpl.java:136)
+	at org.hibernate.engine.query.HQLQueryPlan.<init>(HQLQueryPlan.java:101)
+	at org.hibernate.engine.query.HQLQueryPlan.<init>(HQLQueryPlan.java:80)
+	at org.hibernate.engine.query.QueryPlanCache.getHQLQueryPlan(QueryPlanCache.java:124)
+	at org.hibernate.impl.SessionFactoryImpl.checkNamedQueries(SessionFactoryImpl.java:547)
+	at org.hibernate.impl.SessionFactoryImpl.<init>(SessionFactoryImpl.java:411)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:1842)
+	at org.hibernate.ejb.Ejb3Configuration.buildEntityManagerFactory(Ejb3Configuration.java:902)
+	at org.hibernate.ejb.HibernatePersistence.createEntityManagerFactory(HibernatePersistence.java:57)
+	at javax.persistence.Persistence.createEntityManagerFactory(Persistence.java:48)
+	at javax.persistence.Persistence.createEntityManagerFactory(Persistence.java:32)
+	at uo.ri.persistence.util.Jpa.getEmf(Jpa.java:36)
+	at uo.ri.persistence.util.Jpa.createEntityManager(Jpa.java:24)
+	at uo.ri.amp.business.impl.CommandExecutor.execute(CommandExecutor.java:15)
+	at uo.ri.amp.business.impl.AdminServiceImpl.findAllMechanics(AdminServiceImpl.java:40)
+	at uo.ri.amp.ui.admin.action.ListAllMechanicsAction.execute(ListAllMechanicsAction.java:20)
+	at alb.util.menu.BaseMenu.processOption(BaseMenu.java:51)
+	at alb.util.menu.BaseMenu.execute(BaseMenu.java:33)
+	at alb.util.menu.BaseMenu.processOption(BaseMenu.java:51)
+	at alb.util.menu.BaseMenu.execute(BaseMenu.java:33)
+	at uo.ri.amp.ui.admin.MainMenu.main(MainMenu.java:23)
+03:39:01,401  WARN RootClass:253 - composite-id class does not override equals(): uo.ri.model.types.CargoKey
+03:39:01,404  WARN RootClass:258 - composite-id class does not override hashCode(): uo.ri.model.types.CargoKey
+03:42:25,991  WARN RootClass:253 - composite-id class does not override equals(): uo.ri.model.types.CargoKey
+03:42:25,993  WARN RootClass:258 - composite-id class does not override hashCode(): uo.ri.model.types.CargoKey
+03:42:27,156 ERROR SessionFactoryImpl:422 - Error in named query: Mecanico.find
+org.hibernate.QueryException: could not resolve property: contrato of: uo.ri.model.Mecanico [select m from uo.ri.model.Mecanico m where m.contrato.status = uo.ri.amp.model.types.ContratoStatus.ACTIVO]
+	at org.hibernate.persister.entity.AbstractPropertyMapping.propertyException(AbstractPropertyMapping.java:81)
+	at org.hibernate.persister.entity.AbstractPropertyMapping.toType(AbstractPropertyMapping.java:75)
+	at org.hibernate.persister.entity.AbstractEntityPersister.toType(AbstractEntityPersister.java:1449)
+	at org.hibernate.hql.ast.tree.FromElementType.getPropertyType(FromElementType.java:315)
+	at org.hibernate.hql.ast.tree.FromElement.getPropertyType(FromElement.java:487)
+	at org.hibernate.hql.ast.tree.DotNode.getDataType(DotNode.java:611)
+	at org.hibernate.hql.ast.tree.DotNode.prepareLhs(DotNode.java:263)
+	at org.hibernate.hql.ast.tree.DotNode.resolve(DotNode.java:210)
+	at org.hibernate.hql.ast.tree.DotNode.resolveFirstChild(DotNode.java:175)
+	at org.hibernate.hql.ast.HqlSqlWalker.lookupProperty(HqlSqlWalker.java:571)
+	at org.hibernate.hql.antlr.HqlSqlBaseWalker.addrExpr(HqlSqlBaseWalker.java:4774)
+	at org.hibernate.hql.antlr.HqlSqlBaseWalker.expr(HqlSqlBaseWalker.java:1326)
+	at org.hibernate.hql.antlr.HqlSqlBaseWalker.exprOrSubquery(HqlSqlBaseWalker.java:4471)
+	at org.hibernate.hql.antlr.HqlSqlBaseWalker.comparisonExpr(HqlSqlBaseWalker.java:3944)
+	at org.hibernate.hql.antlr.HqlSqlBaseWalker.logicalExpr(HqlSqlBaseWalker.java:2047)
+	at org.hibernate.hql.antlr.HqlSqlBaseWalker.whereClause(HqlSqlBaseWalker.java:831)
+	at org.hibernate.hql.antlr.HqlSqlBaseWalker.query(HqlSqlBaseWalker.java:617)
+	at org.hibernate.hql.antlr.HqlSqlBaseWalker.selectStatement(HqlSqlBaseWalker.java:301)
+	at org.hibernate.hql.antlr.HqlSqlBaseWalker.statement(HqlSqlBaseWalker.java:244)
+	at org.hibernate.hql.ast.QueryTranslatorImpl.analyze(QueryTranslatorImpl.java:254)
+	at org.hibernate.hql.ast.QueryTranslatorImpl.doCompile(QueryTranslatorImpl.java:185)
+	at org.hibernate.hql.ast.QueryTranslatorImpl.compile(QueryTranslatorImpl.java:136)
+	at org.hibernate.engine.query.HQLQueryPlan.<init>(HQLQueryPlan.java:101)
+	at org.hibernate.engine.query.HQLQueryPlan.<init>(HQLQueryPlan.java:80)
+	at org.hibernate.engine.query.QueryPlanCache.getHQLQueryPlan(QueryPlanCache.java:124)
+	at org.hibernate.impl.SessionFactoryImpl.checkNamedQueries(SessionFactoryImpl.java:547)
+	at org.hibernate.impl.SessionFactoryImpl.<init>(SessionFactoryImpl.java:411)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:1842)
+	at org.hibernate.ejb.Ejb3Configuration.buildEntityManagerFactory(Ejb3Configuration.java:902)
+	at org.hibernate.ejb.HibernatePersistence.createEntityManagerFactory(HibernatePersistence.java:57)
+	at javax.persistence.Persistence.createEntityManagerFactory(Persistence.java:48)
+	at javax.persistence.Persistence.createEntityManagerFactory(Persistence.java:32)
+	at uo.ri.persistence.util.Jpa.getEmf(Jpa.java:36)
+	at uo.ri.persistence.util.Jpa.createEntityManager(Jpa.java:24)
+	at uo.ri.amp.business.impl.CommandExecutor.execute(CommandExecutor.java:15)
+	at uo.ri.amp.business.impl.AdminServiceImpl.findMechanics(AdminServiceImpl.java:53)
+	at uo.ri.amp.ui.admin.action.ListMechanicsAction.execute(ListMechanicsAction.java:21)
+	at alb.util.menu.BaseMenu.processOption(BaseMenu.java:51)
+	at alb.util.menu.BaseMenu.execute(BaseMenu.java:33)
+	at alb.util.menu.BaseMenu.processOption(BaseMenu.java:51)
+	at alb.util.menu.BaseMenu.execute(BaseMenu.java:33)
+	at uo.ri.amp.ui.admin.MainMenu.main(MainMenu.java:23)
+03:46:44,964  WARN RootClass:253 - composite-id class does not override equals(): uo.ri.model.types.CargoKey
+03:46:44,967  WARN RootClass:258 - composite-id class does not override hashCode(): uo.ri.model.types.CargoKey
+03:49:25,689  WARN RootClass:253 - composite-id class does not override equals(): uo.ri.model.types.CargoKey
+03:49:25,692  WARN RootClass:258 - composite-id class does not override hashCode(): uo.ri.model.types.CargoKey
+03:50:33,651  WARN RootClass:253 - composite-id class does not override equals(): uo.ri.model.types.CargoKey
+03:50:33,654  WARN RootClass:258 - composite-id class does not override hashCode(): uo.ri.model.types.CargoKey
+03:51:03,554  WARN RootClass:253 - composite-id class does not override equals(): uo.ri.model.types.CargoKey
+03:51:03,558  WARN RootClass:258 - composite-id class does not override hashCode(): uo.ri.model.types.CargoKey
+03:51:37,773  WARN RootClass:253 - composite-id class does not override equals(): uo.ri.model.types.CargoKey
+03:51:37,775  WARN RootClass:258 - composite-id class does not override hashCode(): uo.ri.model.types.CargoKey
+03:52:31,667  WARN RootClass:253 - composite-id class does not override equals(): uo.ri.model.types.CargoKey
+03:52:31,670  WARN RootClass:258 - composite-id class does not override hashCode(): uo.ri.model.types.CargoKey
+04:05:06,316  WARN RootClass:253 - composite-id class does not override equals(): uo.ri.model.types.CargoKey
+04:05:06,319  WARN RootClass:258 - composite-id class does not override hashCode(): uo.ri.model.types.CargoKey
+16:03:56,652  WARN RootClass:253 - composite-id class does not override equals(): uo.ri.model.types.CargoKey
+16:03:56,656  WARN RootClass:258 - composite-id class does not override hashCode(): uo.ri.model.types.CargoKey
+16:03:58,024  WARN SettingsFactory:147 - Could not obtain connection to query metadata
+java.sql.SQLTransientConnectionException: java.net.ConnectException: Connection refused: connect
+	at org.hsqldb.jdbc.Util.sqlException(Unknown Source)
+	at org.hsqldb.jdbc.Util.sqlException(Unknown Source)
+	at org.hsqldb.jdbc.JDBCConnection.<init>(Unknown Source)
+	at org.hsqldb.jdbc.JDBCDriver.getConnection(Unknown Source)
+	at org.hsqldb.jdbc.JDBCDriver.connect(Unknown Source)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at org.hibernate.connection.DriverManagerConnectionProvider.getConnection(DriverManagerConnectionProvider.java:133)
+	at org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:114)
+	at org.hibernate.cfg.Configuration.buildSettingsInternal(Configuration.java:2833)
+	at org.hibernate.cfg.Configuration.buildSettings(Configuration.java:2829)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:1840)
+	at org.hibernate.ejb.Ejb3Configuration.buildEntityManagerFactory(Ejb3Configuration.java:902)
+	at org.hibernate.ejb.HibernatePersistence.createEntityManagerFactory(HibernatePersistence.java:57)
+	at javax.persistence.Persistence.createEntityManagerFactory(Persistence.java:48)
+	at javax.persistence.Persistence.createEntityManagerFactory(Persistence.java:32)
+	at uo.ri.persistence.util.Jpa.getEmf(Jpa.java:36)
+	at uo.ri.persistence.util.Jpa.createEntityManager(Jpa.java:24)
+	at uo.ri.amp.business.impl.CommandExecutor.execute(CommandExecutor.java:17)
+	at uo.ri.amp.business.impl.AdminServiceImpl.newMechanic(AdminServiceImpl.java:29)
+	at uo.ri.ui.admin.action.AddMechanicAction.execute(AddMechanicAction.java:22)
+	at alb.util.menu.BaseMenu.processOption(BaseMenu.java:51)
+	at alb.util.menu.BaseMenu.execute(BaseMenu.java:33)
+	at alb.util.menu.BaseMenu.processOption(BaseMenu.java:51)
+	at alb.util.menu.BaseMenu.execute(BaseMenu.java:33)
+	at uo.ri.amp.ui.admin.MainMenu.main(MainMenu.java:23)
+Caused by: org.hsqldb.HsqlException: java.net.ConnectException: Connection refused: connect
+	at org.hsqldb.ClientConnection.openConnection(Unknown Source)
+	at org.hsqldb.ClientConnection.initConnection(Unknown Source)
+	at org.hsqldb.ClientConnection.<init>(Unknown Source)
+	... 24 more
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at java.net.Socket.<init>(Unknown Source)
+	at java.net.Socket.<init>(Unknown Source)
+	at org.hsqldb.server.HsqlSocketFactory.createSocket(Unknown Source)
+	... 27 more
+16:03:59,665 ERROR SchemaExport:287 - schema export unsuccessful
+java.sql.SQLTransientConnectionException: java.net.ConnectException: Connection refused: connect
+	at org.hsqldb.jdbc.Util.sqlException(Unknown Source)
+	at org.hsqldb.jdbc.Util.sqlException(Unknown Source)
+	at org.hsqldb.jdbc.JDBCConnection.<init>(Unknown Source)
+	at org.hsqldb.jdbc.JDBCDriver.getConnection(Unknown Source)
+	at org.hsqldb.jdbc.JDBCDriver.connect(Unknown Source)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at org.hibernate.connection.DriverManagerConnectionProvider.getConnection(DriverManagerConnectionProvider.java:133)
+	at org.hibernate.tool.hbm2ddl.SuppliedConnectionProviderConnectionHelper.prepare(SuppliedConnectionProviderConnectionHelper.java:51)
+	at org.hibernate.tool.hbm2ddl.SchemaExport.execute(SchemaExport.java:263)
+	at org.hibernate.tool.hbm2ddl.SchemaExport.create(SchemaExport.java:219)
+	at org.hibernate.impl.SessionFactoryImpl.<init>(SessionFactoryImpl.java:370)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:1842)
+	at org.hibernate.ejb.Ejb3Configuration.buildEntityManagerFactory(Ejb3Configuration.java:902)
+	at org.hibernate.ejb.HibernatePersistence.createEntityManagerFactory(HibernatePersistence.java:57)
+	at javax.persistence.Persistence.createEntityManagerFactory(Persistence.java:48)
+	at javax.persistence.Persistence.createEntityManagerFactory(Persistence.java:32)
+	at uo.ri.persistence.util.Jpa.getEmf(Jpa.java:36)
+	at uo.ri.persistence.util.Jpa.createEntityManager(Jpa.java:24)
+	at uo.ri.amp.business.impl.CommandExecutor.execute(CommandExecutor.java:17)
+	at uo.ri.amp.business.impl.AdminServiceImpl.newMechanic(AdminServiceImpl.java:29)
+	at uo.ri.ui.admin.action.AddMechanicAction.execute(AddMechanicAction.java:22)
+	at alb.util.menu.BaseMenu.processOption(BaseMenu.java:51)
+	at alb.util.menu.BaseMenu.execute(BaseMenu.java:33)
+	at alb.util.menu.BaseMenu.processOption(BaseMenu.java:51)
+	at alb.util.menu.BaseMenu.execute(BaseMenu.java:33)
+	at uo.ri.amp.ui.admin.MainMenu.main(MainMenu.java:23)
+Caused by: org.hsqldb.HsqlException: java.net.ConnectException: Connection refused: connect
+	at org.hsqldb.ClientConnection.openConnection(Unknown Source)
+	at org.hsqldb.ClientConnection.initConnection(Unknown Source)
+	at org.hsqldb.ClientConnection.<init>(Unknown Source)
+	... 25 more
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at java.net.Socket.<init>(Unknown Source)
+	at java.net.Socket.<init>(Unknown Source)
+	at org.hsqldb.server.HsqlSocketFactory.createSocket(Unknown Source)
+	... 28 more
+16:04:01,141  WARN JDBCExceptionReporter:233 - SQL Error: -1301, SQLState: 08001
+16:04:01,142 ERROR JDBCExceptionReporter:234 - java.net.ConnectException: Connection refused: connect
+16:05:03,915  WARN RootClass:253 - composite-id class does not override equals(): uo.ri.model.types.CargoKey
+16:05:03,918  WARN RootClass:258 - composite-id class does not override hashCode(): uo.ri.model.types.CargoKey
+16:26:11,303  WARN RootClass:253 - composite-id class does not override equals(): uo.ri.model.types.CargoKey
+16:26:11,307  WARN RootClass:258 - composite-id class does not override hashCode(): uo.ri.model.types.CargoKey
+16:27:43,656  WARN RootClass:253 - composite-id class does not override equals(): uo.ri.model.types.CargoKey
+16:27:43,660  WARN RootClass:258 - composite-id class does not override hashCode(): uo.ri.model.types.CargoKey
+16:31:07,598 ERROR LazyInitializationException:42 - failed to lazily initialize a collection of role: uo.ri.amp.model.TipoContrato.contratos, no session or session was closed
+org.hibernate.LazyInitializationException: failed to lazily initialize a collection of role: uo.ri.amp.model.TipoContrato.contratos, no session or session was closed
+	at org.hibernate.collection.AbstractPersistentCollection.throwLazyInitializationException(AbstractPersistentCollection.java:383)
+	at org.hibernate.collection.AbstractPersistentCollection.throwLazyInitializationExceptionIfNotConnected(AbstractPersistentCollection.java:375)
+	at org.hibernate.collection.AbstractPersistentCollection.initialize(AbstractPersistentCollection.java:368)
+	at org.hibernate.collection.PersistentSet.add(PersistentSet.java:212)
+	at uo.ri.amp.model.TipoContrato.addContrato(TipoContrato.java:58)
+	at uo.ri.amp.model.Contrato.<init>(Contrato.java:49)
+	at uo.ri.amp.ui.admin.action.AddContractAction.execute(AddContractAction.java:21)
+	at alb.util.menu.BaseMenu.processOption(BaseMenu.java:51)
+	at alb.util.menu.BaseMenu.execute(BaseMenu.java:33)
+	at alb.util.menu.BaseMenu.processOption(BaseMenu.java:51)
+	at alb.util.menu.BaseMenu.execute(BaseMenu.java:33)
+	at uo.ri.amp.ui.admin.MainMenu.main(MainMenu.java:23)
+17:24:29,541  WARN RootClass:253 - composite-id class does not override equals(): uo.ri.model.types.CargoKey
+17:24:29,544  WARN RootClass:258 - composite-id class does not override hashCode(): uo.ri.model.types.CargoKey
+17:32:17,229  WARN RootClass:253 - composite-id class does not override equals(): uo.ri.model.types.CargoKey
+17:32:17,231  WARN RootClass:258 - composite-id class does not override hashCode(): uo.ri.model.types.CargoKey
+17:36:43,186  WARN RootClass:253 - composite-id class does not override equals(): uo.ri.model.types.CargoKey
+17:36:43,189  WARN RootClass:258 - composite-id class does not override hashCode(): uo.ri.model.types.CargoKey
+17:37:13,846 ERROR LazyInitializationException:42 - failed to lazily initialize a collection of role: uo.ri.amp.model.TipoContrato.contratos, no session or session was closed
+org.hibernate.LazyInitializationException: failed to lazily initialize a collection of role: uo.ri.amp.model.TipoContrato.contratos, no session or session was closed
+	at org.hibernate.collection.AbstractPersistentCollection.throwLazyInitializationException(AbstractPersistentCollection.java:383)
+	at org.hibernate.collection.AbstractPersistentCollection.throwLazyInitializationExceptionIfNotConnected(AbstractPersistentCollection.java:375)
+	at org.hibernate.collection.AbstractPersistentCollection.initialize(AbstractPersistentCollection.java:368)
+	at org.hibernate.collection.PersistentSet.add(PersistentSet.java:212)
+	at uo.ri.amp.model.TipoContrato.addContrato(TipoContrato.java:59)
+	at uo.ri.amp.business.impl.admin.AddContract.execute(AddContract.java:21)
+	at uo.ri.amp.business.impl.CommandExecutor.execute(CommandExecutor.java:23)
+	at uo.ri.amp.business.impl.AdminServiceImpl.newContract(AdminServiceImpl.java:65)
+	at uo.ri.amp.ui.admin.action.AddContractAction.execute(AddContractAction.java:21)
+	at alb.util.menu.BaseMenu.processOption(BaseMenu.java:51)
+	at alb.util.menu.BaseMenu.execute(BaseMenu.java:33)
+	at alb.util.menu.BaseMenu.processOption(BaseMenu.java:51)
+	at alb.util.menu.BaseMenu.execute(BaseMenu.java:33)
+	at uo.ri.amp.ui.admin.MainMenu.main(MainMenu.java:23)
+17:41:57,534  WARN RootClass:253 - composite-id class does not override equals(): uo.ri.model.types.CargoKey
+17:41:57,537  WARN RootClass:258 - composite-id class does not override hashCode(): uo.ri.model.types.CargoKey
+17:41:58,853 ERROR LazyInitializationException:42 - failed to lazily initialize a collection of role: uo.ri.amp.model.TipoContrato.contratos, no session or session was closed
+org.hibernate.LazyInitializationException: failed to lazily initialize a collection of role: uo.ri.amp.model.TipoContrato.contratos, no session or session was closed
+	at org.hibernate.collection.AbstractPersistentCollection.throwLazyInitializationException(AbstractPersistentCollection.java:383)
+	at org.hibernate.collection.AbstractPersistentCollection.throwLazyInitializationExceptionIfNotConnected(AbstractPersistentCollection.java:375)
+	at org.hibernate.collection.AbstractPersistentCollection.initialize(AbstractPersistentCollection.java:368)
+	at org.hibernate.collection.PersistentSet.add(PersistentSet.java:212)
+	at uo.ri.amp.model.TipoContrato.addContrato(TipoContrato.java:59)
+	at uo.ri.amp.business.impl.admin.AddContract.execute(AddContract.java:20)
+	at uo.ri.amp.business.impl.CommandExecutor.execute(CommandExecutor.java:23)
+	at uo.ri.amp.business.impl.AdminServiceImpl.newContract(AdminServiceImpl.java:65)
+	at uo.ri.amp.ui.admin.action.AddContractAction.execute(AddContractAction.java:21)
+	at alb.util.menu.BaseMenu.processOption(BaseMenu.java:51)
+	at alb.util.menu.BaseMenu.execute(BaseMenu.java:33)
+	at alb.util.menu.BaseMenu.processOption(BaseMenu.java:51)
+	at alb.util.menu.BaseMenu.execute(BaseMenu.java:33)
+	at uo.ri.amp.ui.admin.MainMenu.main(MainMenu.java:23)
+17:44:10,382  WARN RootClass:253 - composite-id class does not override equals(): uo.ri.model.types.CargoKey
+17:44:10,384  WARN RootClass:258 - composite-id class does not override hashCode(): uo.ri.model.types.CargoKey
+18:06:46,650  WARN RootClass:253 - composite-id class does not override equals(): uo.ri.model.types.CargoKey
+18:06:46,654  WARN RootClass:258 - composite-id class does not override hashCode(): uo.ri.model.types.CargoKey
+18:09:29,749  WARN RootClass:253 - composite-id class does not override equals(): uo.ri.model.types.CargoKey
+18:09:29,752  WARN RootClass:258 - composite-id class does not override hashCode(): uo.ri.model.types.CargoKey
+18:14:44,241  WARN RootClass:253 - composite-id class does not override equals(): uo.ri.model.types.CargoKey
+18:14:44,244  WARN RootClass:258 - composite-id class does not override hashCode(): uo.ri.model.types.CargoKey
+18:15:09,204  WARN RootClass:253 - composite-id class does not override equals(): uo.ri.model.types.CargoKey
+18:15:09,208  WARN RootClass:258 - composite-id class does not override hashCode(): uo.ri.model.types.CargoKey
+19:13:05,103  WARN RootClass:253 - composite-id class does not override equals(): uo.ri.model.types.CargoKey
+19:13:05,106  WARN RootClass:258 - composite-id class does not override hashCode(): uo.ri.model.types.CargoKey
+19:14:28,562  WARN RootClass:253 - composite-id class does not override equals(): uo.ri.model.types.CargoKey
+19:14:28,566  WARN RootClass:258 - composite-id class does not override hashCode(): uo.ri.model.types.CargoKey
+23:53:16,463  WARN RootClass:253 - composite-id class does not override equals(): uo.ri.model.types.CargoKey
+23:53:16,505  WARN RootClass:258 - composite-id class does not override hashCode(): uo.ri.model.types.CargoKey
+23:54:45,630  WARN RootClass:253 - composite-id class does not override equals(): uo.ri.model.types.CargoKey
+23:54:45,633  WARN RootClass:258 - composite-id class does not override hashCode(): uo.ri.model.types.CargoKey
+23:55:42,621  WARN RootClass:253 - composite-id class does not override equals(): uo.ri.model.types.CargoKey
+23:55:42,623  WARN RootClass:258 - composite-id class does not override hashCode(): uo.ri.model.types.CargoKey
+23:55:44,070 ERROR LazyInitializationException:42 - failed to lazily initialize a collection of role: uo.ri.amp.model.TipoContrato.contratos, no session or session was closed
+org.hibernate.LazyInitializationException: failed to lazily initialize a collection of role: uo.ri.amp.model.TipoContrato.contratos, no session or session was closed
+	at org.hibernate.collection.AbstractPersistentCollection.throwLazyInitializationException(AbstractPersistentCollection.java:383)
+	at org.hibernate.collection.AbstractPersistentCollection.throwLazyInitializationExceptionIfNotConnected(AbstractPersistentCollection.java:375)
+	at org.hibernate.collection.AbstractPersistentCollection.initialize(AbstractPersistentCollection.java:368)
+	at org.hibernate.collection.AbstractPersistentCollection.read(AbstractPersistentCollection.java:111)
+	at org.hibernate.collection.PersistentSet.toString(PersistentSet.java:332)
+	at java.lang.String.valueOf(Unknown Source)
+	at java.lang.StringBuilder.append(Unknown Source)
+	at uo.ri.amp.model.TipoContrato.toString(TipoContrato.java:89)
+	at java.util.Formatter$FormatSpecifier.printString(Unknown Source)
+	at java.util.Formatter$FormatSpecifier.print(Unknown Source)
+	at java.util.Formatter.format(Unknown Source)
+	at java.io.PrintStream.format(Unknown Source)
+	at java.io.PrintStream.printf(Unknown Source)
+	at alb.util.console.Console.printf(Console.java:28)
+	at uo.ri.amp.ui.util.Printer.printContract(Printer.java:62)
+	at uo.ri.amp.ui.admin.action.ListContractsMechanicAction.execute(ListContractsMechanicAction.java:25)
+	at alb.util.menu.BaseMenu.processOption(BaseMenu.java:51)
+	at alb.util.menu.BaseMenu.execute(BaseMenu.java:33)
+	at alb.util.menu.BaseMenu.processOption(BaseMenu.java:51)
+	at alb.util.menu.BaseMenu.execute(BaseMenu.java:33)
+	at uo.ri.amp.ui.admin.MainMenu.main(MainMenu.java:23)
+23:55:58,361  WARN RootClass:253 - composite-id class does not override equals(): uo.ri.model.types.CargoKey
+23:55:58,364  WARN RootClass:258 - composite-id class does not override hashCode(): uo.ri.model.types.CargoKey
+23:55:59,760 ERROR LazyInitializationException:42 - failed to lazily initialize a collection of role: uo.ri.amp.model.TipoContrato.contratos, no session or session was closed
+org.hibernate.LazyInitializationException: failed to lazily initialize a collection of role: uo.ri.amp.model.TipoContrato.contratos, no session or session was closed
+	at org.hibernate.collection.AbstractPersistentCollection.throwLazyInitializationException(AbstractPersistentCollection.java:383)
+	at org.hibernate.collection.AbstractPersistentCollection.throwLazyInitializationExceptionIfNotConnected(AbstractPersistentCollection.java:375)
+	at org.hibernate.collection.AbstractPersistentCollection.initialize(AbstractPersistentCollection.java:368)
+	at org.hibernate.collection.AbstractPersistentCollection.read(AbstractPersistentCollection.java:111)
+	at org.hibernate.collection.PersistentSet.toString(PersistentSet.java:332)
+	at java.lang.String.valueOf(Unknown Source)
+	at java.lang.StringBuilder.append(Unknown Source)
+	at uo.ri.amp.model.TipoContrato.toString(TipoContrato.java:89)
+	at java.util.Formatter$FormatSpecifier.printString(Unknown Source)
+	at java.util.Formatter$FormatSpecifier.print(Unknown Source)
+	at java.util.Formatter.format(Unknown Source)
+	at java.io.PrintStream.format(Unknown Source)
+	at java.io.PrintStream.printf(Unknown Source)
+	at alb.util.console.Console.printf(Console.java:28)
+	at uo.ri.amp.ui.util.Printer.printContract(Printer.java:62)
+	at uo.ri.amp.ui.admin.action.ListContractsMechanicAction.execute(ListContractsMechanicAction.java:25)
+	at alb.util.menu.BaseMenu.processOption(BaseMenu.java:51)
+	at alb.util.menu.BaseMenu.execute(BaseMenu.java:33)
+	at alb.util.menu.BaseMenu.processOption(BaseMenu.java:51)
+	at alb.util.menu.BaseMenu.execute(BaseMenu.java:33)
+	at uo.ri.amp.ui.admin.MainMenu.main(MainMenu.java:23)
+23:56:30,564  WARN RootClass:253 - composite-id class does not override equals(): uo.ri.model.types.CargoKey
+23:56:30,568  WARN RootClass:258 - composite-id class does not override hashCode(): uo.ri.model.types.CargoKey
+23:57:43,914  WARN RootClass:253 - composite-id class does not override equals(): uo.ri.model.types.CargoKey
+23:57:43,917  WARN RootClass:258 - composite-id class does not override hashCode(): uo.ri.model.types.CargoKey
+23:58:24,622  WARN RootClass:253 - composite-id class does not override equals(): uo.ri.model.types.CargoKey
+23:58:24,625  WARN RootClass:258 - composite-id class does not override hashCode(): uo.ri.model.types.CargoKey
+23:59:27,142  WARN RootClass:253 - composite-id class does not override equals(): uo.ri.model.types.CargoKey
+23:59:27,145  WARN RootClass:258 - composite-id class does not override hashCode(): uo.ri.model.types.CargoKey
