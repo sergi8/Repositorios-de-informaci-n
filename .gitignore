@@ -8,6 +8,7 @@ target
 *.pydevproject
 .metadata
 *.class
+*.vsd
 .gradle
 bin/
 tmp/
